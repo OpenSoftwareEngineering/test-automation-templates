@@ -39,3 +39,16 @@ Attempted to install the `android-sdk-cmdline-tools-latest` package from AUR.
 This did not fix the android issue. However installing the cmdline tools from
 android-studio's SDK manager, and adding `$HOME/Android/Sdk/platform-tools` to
 $PATH did fix the issue.
+
+---
+
+## "Cannot find Chrome" issue
+
+Occurs when some other "version" of Google chrome is installed, like `chromium`
+or `ungoogled-chromium`. To fix, the environment variable `CHROME_EXECUTABLE`
+should be set to `/usr/bin/chromium`, in my case, since `.bashrc` is run before
+`sway`, I added the following line to my `.bashrc`:
+
+```bash
+export CHROME_EXECUTABLE=/usr/bin/chromium
+```
