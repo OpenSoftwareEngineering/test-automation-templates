@@ -30,3 +30,12 @@ like in my case I use `flutter-tools.nvim` in neovim, it will still work.
 Flutter desktop apps can now be built, but `flutter doctor` still reports issue
 with missing android SDK. Some initial searching shows that the `ANDROID_HOME`
 environment variable must be set.
+
+---
+
+### Fourth Attempt
+
+Attempted to install the `android-sdk-cmdline-tools-latest` package from AUR.
+This did not fix the android issue. However installing the cmdline tools from
+android-studio's SDK manager, and adding `$HOME/Android/Sdk/platform-tools` to
+$PATH did fix the issue.
