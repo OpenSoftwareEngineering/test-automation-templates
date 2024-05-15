@@ -55,3 +55,17 @@ export CHROME_EXECUTABLE=/usr/bin/chromium
 
 Note that chromium may look different, this is a non issue, since flutter
 launches chromium under it's own temporary(?) profile
+
+---
+
+## Issues with android emulator
+
+Launching flutter app into android emulator, installed through SDK manager
+in android-studio, has these issues so far:
+
+### Glitchy UI
+
+Random lines with circles on ends appear that do not disappear at any time,
+even after closing the emulator. They persist across all workspaces (virtual
+desktps). I believe this may be a wayland related issue, needs further
+investigation
