@@ -52,3 +52,6 @@ should be set to `/usr/bin/chromium`, in my case, since `.bashrc` is run before
 ```bash
 export CHROME_EXECUTABLE=/usr/bin/chromium
 ```
+
+Note that chromium may look different, this is a non issue, since flutter
+launches chromium under it's own temporary(?) profile
