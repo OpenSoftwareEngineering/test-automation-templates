@@ -22,3 +22,6 @@ same token to be using the same ip address.
 
 There seems to be no way to disable this behavior, so for now the only solution
 seems to be to remove such checks in the API implementation
+
+Another thing to note: The preview mode does not make API requests, it will
+always execute conditional flows in the true branch.
