@@ -72,3 +72,6 @@ flutter packages upgrade && flutter test
 	requests are automatically given the response code 400. ~Unsure if this issue
 	originates from FlutterFlow or Flutter itself.~
 	**Resolved**: Use integration testing, HTTP requests are allowed there.
+
+2. Slow rendering. Due to this, the pumpAndWait actions often timeout. The
+	solution so far has been to just set a large amount of timeout.
