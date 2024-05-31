@@ -15,7 +15,10 @@ https://docs.flutterflow.io/deploying-your-app/testing-your-app/automated-tests
 
 ## FlutterFlow's Built-In testing
 
-The paid tier also provides built in testing features:
+The paid tier also provides built in testing features.
+
+_NOTE: these FlutterFlow tests use Flutter's integration tests under the hood,
+not unittests_
 
 Each test consists of two parts:
 
@@ -65,6 +68,7 @@ flutter packages upgrade && flutter test
 
 ## Issues
 
-1. Flutter tests do not support making HTTP requests. Instead, all requests are
-	automatically given the response code 400. Unsure if this issue originates
-	from FlutterFlow or Flutter itself.
+1. Flutter unit tests do not support making HTTP requests. Instead, all
+	requests are automatically given the response code 400. ~Unsure if this issue
+	originates from FlutterFlow or Flutter itself.~
+	**Resolved**: Use integration testing, HTTP requests are allowed there.
